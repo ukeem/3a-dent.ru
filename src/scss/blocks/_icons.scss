@@ -1,0 +1,61 @@
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+}
+
+.icon--smile {
+    width: 48px;
+    height: 48px;
+    fill: var(--accent);
+
+    
+    @media (max-width: 1024px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.icon--reviews {
+    width: 48px;
+    height: 48px;
+    fill: var(--accent);
+
+    @media (max-width: 480px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+.icon--address {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent);
+}
+.icon--phone, .icon--wa, .icon--tg {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent);
+}
+
+.icon--worktime {
+    width: 24px;
+    height: 24px;
+    fill: var(--accent);
+}
+
+.icon--map {
+    width: 48px;
+    height: 48px;
+    fill: var(--accent);
+    @media (max-width: 480px) {
+        width: 24px;
+        height: 24px;
+    }
+}

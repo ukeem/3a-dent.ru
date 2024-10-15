@@ -1,0 +1,132 @@
+.contacts {
+    background-color: var(--bg);
+    padding: 80px 0;
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+.contacts__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+.contacts__grid--item {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    @media (max-width: 768px) {
+        &:first-child {
+            margin-bottom: 40px;
+        }
+    }
+}
+.contacts__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--blue);
+}
+.contacts__info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+}
+.contacts__block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contacts__info--title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    span {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--blue);
+    }
+}
+.contacts__info--descr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--blue);
+}
+.contacts__maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    height: 100%;
+}
+.contacts__maps--item {
+    padding: 26px 12px;
+    border: 1px solid var(--accent);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease;
+    a {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        width: 75%;
+    
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    
+        @media (max-width: 480px) {
+            width: 80%;
+        }
+    }
+    span {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        color: var(--blue);
+        .accent {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--accent);
+            transition: all .3s ease;
+        }
+        
+    
+        @media (max-width: 1024px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 16px;
+        }
+    }
+    svg {
+        transition: all .3s ease;
+    }
+    &:hover {
+        background-color: var(--accent);
+        svg {
+            fill: #fff;
+        }
+        span {
+            .accent {
+                color: #fff;
+            }
+        }
+    }
+}

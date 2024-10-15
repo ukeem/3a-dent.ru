@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width: 768px) {
+    }
+}
+
+section {
+    border-bottom: 1px solid var(--accent);
+}

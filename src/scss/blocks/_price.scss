@@ -1,0 +1,114 @@
+.price {
+    padding: 80px 0;
+    @media (max-width: 768px) {
+        padding: 60px 0;
+    }
+}
+.price__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
+.price__grid--item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 16px;
+    
+    @media (max-width: 768px) {
+        margin-bottom: 12px;
+        padding: 20px 10px;
+    }
+    &:nth-child(odd) {
+        width: 100%;
+        gap: 24px;
+        background: var(--light);
+
+        .price__title {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 120%;
+            text-align: center;
+            color: var(--blue);
+
+            @media (max-width: 480px) {
+                font-size: 28px;
+            }
+        }
+
+        
+        .price__btn {
+            border-radius: 100px;
+            background: var(--blue);
+            padding: 8px 24px;
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 120%;
+            color: #fff;
+            width: 200px;
+            margin: 0 auto;
+            border: 1px solid var(--blue);
+            transition: all .3s ease;
+            &:hover {
+                background: transparent;
+                color: var(--blue);
+            }
+        }
+    }
+
+    &:nth-child(even) {
+        grid-column: span 3;
+        border: 1px solid var(--accent);
+
+        @media (max-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        
+        .price__list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 12px;
+                background: var(--bg);
+                border-radius: 40px;
+                padding: 4px 12px;
+                    
+                @media (max-width: 480px) {
+                    border-radius: 20px;
+                }
+
+                span {
+                    font-family: var(--font-family);
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: var(--blue);
+                    &:last-child {
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-wrap: nowrap;
+                    }
+                    
+                    @media (max-width: 480px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

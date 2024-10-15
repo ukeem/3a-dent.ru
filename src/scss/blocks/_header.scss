@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+    top: 0;
+	background-color: transparent;
+	padding: 24px 0;
+    transition: background-color .3s ease;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+        position: relative;
+	}
+
+    
+    @media (max-width: 768px) {
+        padding: 12px 0;
+    }
+}

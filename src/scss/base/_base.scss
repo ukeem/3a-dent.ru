@@ -1,0 +1,35 @@
+
+html, body {
+    overflow-x: hidden;
+}
+body {
+	color: var(--blue);
+	font-family: var(--font-family);
+	text-wrap: balance;
+
+    &.no-scroll {
+        overflow-y: hidden !important;
+    }
+}
+
+img {
+	display: block;
+    object-fit: cover;
+}
+
+a {
+	color: var(--blue);
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}

@@ -1,0 +1,28 @@
+.header__nav {
+}
+.nav {
+    display: none;
+    .nav-link {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--blue);
+        transition: color .2s ease;
+    
+        &:hover {
+            color: var(--accent);
+        }
+        &.active {
+            color: var(--accent);
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: block;
+    }
+}
+.nav__list {
+	display: flex;
+	column-gap: 24px;
+}
